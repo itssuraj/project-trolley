@@ -70,6 +70,9 @@ header .logo{
 	display: table-cell;
 	margin: 15px 100px 0 0;
 }
+.logo img{
+	max-width: 50px;
+}
 
 header .menu-btn{
 	display: none;
@@ -86,7 +89,7 @@ header .menu-btn{
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 
-	margin: 45px 10px 0 0;
+	margin: 10px 10px 0 0;
 }
 
 header .menu-btn:hover{
