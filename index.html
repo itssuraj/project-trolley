@@ -21,13 +21,26 @@
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/nicescroll.js"></script>
-		<script type="text/javascript" src="js/scrollTo.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>	
     <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">$(function() {
 
+	// Menu Tabular
+	var $menu_tabs = $('.menu-tabs li a'); 
+	$menu_tabs.on('click', function(e) {
+		e.preventDefault();
+		$menu_tabs.removeClass('active');
+		$(this).addClass('active');
+
+		$('.menu-item').fadeOut(300);
+		$(this.hash).delay(300).fadeIn();
+	});
+
+});</script>
 
 </head>
 <body>
