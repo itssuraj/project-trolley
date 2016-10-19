@@ -764,7 +764,7 @@ padding: 1px;
 
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
 
 	.menu-tabs{
 		margin-left: 0px;
